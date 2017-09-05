@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolBarStyle">@style/ToolBarStyle</item>
+    </style>
+
+    <style name="ToolBarStyle">
+        <item name="toolbar_height">48dp</item>
+        <!--只作用于left right-->
+        <item name="toolbar_padding">10dp</item>
+        <!--只作用于left right-->
+        <item name="toolbar_menu_margin">0dp</item>
+        <item name="toolbar_background">#fff</item>
+        <item name="toolbar_title_color">#000</item>
+        <item name="toolbar_title_gravity">left</item>
+        <item name="toolbar_btn_width">38dp</item>
+        <item name="toolbar_title_size">20sp</item>
+        <item name="toolbar_title_margin">10dp</item>
+        <item name="toolbar_back_image">@drawable/icon_back</item>
+        <item name="toolbar_menu_text_size">14sp</item>
+        <item name="toolbar_menu_text_color">#000</item>
+    </style>
+
+
+    <declare-styleable name="ToolBarLayout">
+        <attr name="toolBarStyle" format="reference"/>
+        <attr name="toolbar_height" format="dimension"/>
+        <attr name="toolbar_padding" format="dimension"/>
+        <attr name="toolbar_menu_margin" format="dimension"/>
+        <attr name="toolbar_background" format="color"/>
+        <attr name="toolbar_title_text" format="string"/>
+        <attr name="toolbar_title_color" format="color"/>
+        <attr name="toolbar_title_size" format="dimension"/>
+        <attr name="toolbar_btn_width" format="dimension"/>
+        <attr name="toolbar_title_margin" format="dimension"/>
+        <attr name="toolbar_back_image" format="reference"/>
+        <attr name="toolbar_menu_text_size" format="dimension"/>
+        <attr name="toolbar_has_default_back" format="boolean"/>
+        <attr name="toolbar_menu_text_color" format="color"/>
+        <attr name="toolbar_title_gravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+
+    <style name="comment_dialog_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/comment_dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/comment_dialog_exit</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+</resources>
